@@ -23,7 +23,7 @@ public class MailService {
     @Autowired
     JavaMailSenderImpl javaMailSender;
 
-    @Async
+    @Async   //异步处理
     public void helloworld(){
         try {
             Thread.sleep(3000);
@@ -34,7 +34,7 @@ public class MailService {
     }
 
 
-    //@Scheduled(cron = "0 * * * * *")
+    //@Scheduled(cron = "0 * * * * *")     //@Scheduled(cron = "0 * * * * *")   定时任务
     public void sad(){
         System.out.println("哎，我太难了。。。。。。");
     }
